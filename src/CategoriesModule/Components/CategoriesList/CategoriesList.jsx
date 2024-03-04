@@ -172,7 +172,7 @@ export default function CategoriesList() {
         </div>
     </div>
     {/* <div className='p-4 bg-black text-white container'></div> */}
-    <div className="table-container text-center container">
+    <div className="table-container text-center mx-4">
       {categoriesList.length > 0 ? 
       (
         <table className="table ">
