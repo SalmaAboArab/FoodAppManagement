@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './SharedModule/Components/NavBar/NavBar'
 import Home from './HomeModule/Components/Home/Home'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createHashRouter, createBrowserRouter } from 'react-router-dom'
 import AuthLayout from './SharedModule/Components/AuthLayout/AuthLayout'
 import Login from './AuthModule/Components/Login/Login'
 import ForgotPass from './AuthModule/Components/ForgotPass/ForgotPass'
@@ -64,7 +64,7 @@ function App() {
     }
   },[])
 
-  const routes=createBrowserRouter([
+  const routes=createHashRouter([
     {
       path:'/',
       // element:<ProtectedRoute adminData={adminData}><AuthLayout/></ProtectedRoute>,

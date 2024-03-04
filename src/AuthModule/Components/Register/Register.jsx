@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logo from '../../../assets/imgs/login-logo.png'
 import { useForm } from 'react-hook-form'
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 
@@ -184,7 +184,7 @@ export default function Register() {
                  </div>
                   
                   <div className="text-end mt-3 ">
-              <a href="login" className='text-success nounderline'>Login?</a>
+              <Link to="/login" className='text-success nounderline'>Login?</Link>
             </div>
                     <div className="text-center">
                     <button className='btn btn-success w-75 mt-4 mb-3 pt-2 text-center'>Register</button>

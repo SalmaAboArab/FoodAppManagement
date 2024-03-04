@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logo from '../../../assets/imgs/login-logo.png'
 import { useForm } from 'react-hook-form'
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import {Link , useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 export default function Login({saveAdminData}) {
@@ -90,8 +90,8 @@ export default function Login({saveAdminData}) {
           
 
             <div className="d-flex justify-content-between mt-2">
-              <a href="register" className='text-black nounderline'>Register Now?</a>
-              <a href="forgot-pass" className='text-success nounderline'>Forgot Password?</a>
+              <Link to="/register" className='text-black nounderline'>Register Now?</Link>
+              <Link to="/forgot-pass" className='text-success nounderline'>Forgot Password?</Link>
             </div>
 
             <button className='btn btn-success w-100 mt-5 mb-3'>Login</button>
